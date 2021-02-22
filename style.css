@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+body {
+  background: #dbf3fd;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: #ffdc94;
+  color: #8e4242;
+  font-family: 'Pacifico', cursive;
+  padding: 5px;
+  text-align: center;
+}
+
+footer {
+  background: #ffdc94;
+  padding: 5px;
+}

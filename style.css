@@ -1,10 +1,22 @@
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 
+/* Body tag styling
+    background        - setting background color
+    font-family       - setting the global font
+*/
 body {
   background: #dbf3fd;
   font-family: 'Roboto', sans-serif;
 }
 
+/* Header tag styling
+    background        - setting background color
+    color             - setting the color of the text in header
+    font-family       - setting the header font
+    padding           - setting the spacing within the header tag
+    text-align        - setting the alignment of the text
+*/
 header {
   background: #ffdc94;
   color: #8e4242;
@@ -13,6 +25,10 @@ header {
   text-align: center;
 }
 
+/* Footer tag styling
+    background        - setting background color
+    padding           - setting the spacing within the footer tag
+*/
 footer {
   background: #ffdc94;
   padding: 5px;

@@ -37,3 +37,7 @@ footer {
   margin-top: 25px;
   padding: 5px;
 }
+
+.jumbotron {
+  background-color: #ffdc94;
+}

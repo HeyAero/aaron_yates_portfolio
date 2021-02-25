@@ -112,7 +112,12 @@ footer {
 }
 
 .about {
-  background-color: rgb(64, 16, 107);
+  background: rgb(64, 16, 107);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 16, 107, 1) 71%,
+    rgba(101, 26, 94, 0) 71%
+  );
 }
 
 .about-highlight {
@@ -142,4 +147,25 @@ footer {
 
 .mobile-menu a:hover {
   color: #ff5761;
+}
+
+.tech-card {
+  background-color: #330d56;
+}
+
+.tech-card i {
+  color: #ff5761;
+  margin: 100px 0 10px 0;
+}
+
+.tech-card h5 {
+  font-size: 2rem;
+}
+
+.tech-card p {
+  margin-bottom: 100px;
+}
+
+hr {
+  background-color: white;
 }

@@ -50,6 +50,7 @@ nav a {
 }
 
 nav a:hover {
+  color: #ff5761;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -61,13 +62,7 @@ nav a:hover {
 */
 footer {
   background: #40106b;
-  border-top: 2px solid #330b57;
-  margin-top: 25px;
   padding: 5px;
-}
-
-.jumbotron {
-  background-color: #ffdc94;
 }
 
 .welcome {
@@ -80,7 +75,8 @@ footer {
 
 .welcome p,
 .about p,
-.portfolio p {
+.portfolio p,
+.contact p {
   color: rgb(178, 136, 187);
   font-weight: 200;
   font-size: 1.1rem;
@@ -133,14 +129,22 @@ footer {
   background-position: center center;
 }
 
+.contact-highlight {
+  background-image: url('assets/images/contact.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .about h4,
-.portfolio h4 {
+.portfolio h4,
+.contact h4 {
   font-weight: 700;
   font-size: 3rem;
 }
 
 .about span,
-.portfolio span {
+.portfolio span,
+.contact span {
   font-weight: 200;
   color: white;
   font-size: 1.7rem;
@@ -158,7 +162,8 @@ footer {
   color: #ff5761;
 }
 
-.tech-card {
+.tech-card,
+.contact-card {
   background-color: #330d56;
 }
 
@@ -173,6 +178,27 @@ footer {
 
 .tech-card p {
   margin-bottom: 100px;
+}
+
+.contact-card {
+  height: 200px;
+}
+
+.contact {
+  background: rgb(64, 16, 107);
+}
+
+.contact h5 {
+  font-weight: 700;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.contact li {
+  display: block;
 }
 
 hr {

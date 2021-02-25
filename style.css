@@ -1,30 +1,58 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;700&display=swap');
 
 /* Body tag styling
-    background        - setting background color
+    background        - backup background incase browser can not use luinear-gradient
+    background        - secondary background that is a linear gradient
     font-family       - setting the global font
 */
 body {
-  background: #dbf3fd;
-  font-family: 'Roboto', sans-serif;
+  background: rgb(64, 16, 107);
+  background: linear-gradient(
+    65deg,
+    rgba(64, 16, 107, 1) 0%,
+    rgba(101, 26, 94, 1) 100%
+  );
+  color: white;
+  font-family: 'Assistant', sans-serif;
 }
 
 /* Header tag styling
     background        - setting background color
+    border-bottom     - adds a border at the bottom of the header
     color             - setting the color of the text in header
-    font-family       - setting the header font
     margin-top        - adds margin to bottom of heading to add spacing
     padding           - setting the spacing within the header tag
     text-align        - setting the alignment of the text
 */
 header {
-  background: #ffdc94;
-  color: #8e4242;
-  font-family: 'Pacifico', cursive;
-  margin-bottom: 25px;
-  padding: 20px;
+  margin-top: 20px;
+  color: white;
   text-align: center;
+}
+
+header img {
+  height: 50px;
+}
+
+/* Nav Styling
+  
+*/
+nav {
+  font-weight: 700;
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  height: 100%;
+  padding-top: 13px;
+}
+
+nav a:hover {
+  color: #ff5761;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 /* Footer tag styling
@@ -33,11 +61,146 @@ header {
     padding           - setting the spacing within the footer tag
 */
 footer {
-  background: #ffdc94;
-  margin-top: 25px;
+  background: #40106b;
   padding: 5px;
 }
 
-.jumbotron {
-  background-color: #ffdc94;
+.welcome {
+  min-height: 80vh;
+}
+
+.welcome > div {
+  min-height: 80vh;
+}
+
+.welcome p,
+.about p,
+.portfolio p,
+.contact p {
+  color: rgb(178, 136, 187);
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+.welcome h5 {
+  font-size: 2rem;
+}
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.welcome a {
+  color: white;
+}
+
+.welcome a:hover {
+  color: #ff5761;
+  text-decoration: none;
+}
+
+.welcome img {
+  width: 75%;
+}
+
+.scroll-text {
+  font-weight: 700;
+}
+
+.about {
+  background: rgb(64, 16, 107);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 16, 107, 1) 73%,
+    rgba(101, 26, 94, 0) 73%
+  );
+}
+
+.about-highlight {
+  background-image: url('assets/images/about.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.portfolio-highlight {
+  background-image: url('assets/images/portfolio.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact-highlight {
+  background-image: url('assets/images/contact.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about h4,
+.portfolio h4,
+.contact h4 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.about span,
+.portfolio span,
+.contact span {
+  font-weight: 200;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.mobile-menu {
+  height: 50px;
+}
+
+.mobile-menu a {
+  color: white;
+}
+
+.mobile-menu a:hover {
+  color: #ff5761;
+}
+
+.tech-card,
+.contact-card {
+  background-color: #330d56;
+}
+
+.tech-card i {
+  color: #ff5761;
+  margin: 100px 0 10px 0;
+}
+
+.tech-card h5 {
+  font-size: 2rem;
+}
+
+.tech-card p {
+  margin-bottom: 100px;
+}
+
+.contact-card {
+  height: 200px;
+}
+
+.contact {
+  background: rgb(64, 16, 107);
+}
+
+.contact h5 {
+  font-weight: 700;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.contact li {
+  display: block;
+}
+
+hr {
+  background-color: white;
 }

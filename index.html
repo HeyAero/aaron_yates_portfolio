@@ -9,9 +9,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Aaron Yates - Portfolio</title>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <!-- 
 
@@ -22,55 +35,175 @@
     <!--
       Top header
     -->
-    <header>
-      <h1>Aaron Yates - My Portfolio</h1>
+    <header class="container">
+      <nav class="d-none d-sm-flex justify-content-start align-items-center">
+        <a href="#" class="px-5">Home</a>
+        <a href="#" class="px-5">About</a>
+        <a href="#" class="px-5">Portfolio</a>
+        <div class="ml-auto">
+          <img src="assets/images/logo.png" alt="aaron yates logo" />
+        </div>
+      </nav>
+      <div
+        class="mobile-menu d-flex d-sm-none justify-content-end align-items-center"
+      >
+        <a class="mr-4"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+      </div>
     </header>
-    <div class="container">
+    <!--
+      Main content
+    -->
+    <main>
+      <section class="welcome container">
+        <div class="row">
+          <div class="col-md-7 align-self-end p-5 text-center">
+            <img src="assets/images/me.png" alt="an image of me" />
+            <h1 class="welcome-title">AARON YATES</h1>
+          </div>
+          <div class="col-md p-3">
+            <p>/ HELLO THERE</p>
+            <h5>
+              Trainee Full Stack Developer with the fantastic
+              <a href="https://getfutureproof.co.uk/" target="blank"
+                >Futureproof</a
+              >
+            </h5>
+            <p>
+              With the great training from Futureproof I have experience in all
+              aspects of the web development cycle. Combining these skills I
+              learnt and skills I brought together from my own learning, I am
+              able to design, create and deploy responsive websites.
+            </p>
+            <a class="scroll-text align-text-bottom">scroll for more</a>
+          </div>
+        </div>
+      </section>
       <!--
         About me section
       -->
-      <div class="jumbotron">
-        <h2>About Me</h2>
-        <p>Learn more about me here</p>
-      </div>
-      <p>
-        Hello. I'm Aaron, I am a 23 year old who is currently undertaking a full
-        stack developer course with Futureproof.
-
-        <h2>Heres some cool things to know about me</h2>
-        <ul>
-          <li>I am a <em>certified ski instructor</em></li>
-          <li>I'm a huge fan of darts</li>
-          <li>I love cycling</li>
-          <li>I <em>love to code</em> and face new challenges everyday</li>
-        </ul>
-      </p>
+      <section class="about pt-5">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="about-highlight col-md py-5 m-2">
+              <div class="row">
+                <div class="col-sm">
+                  <h4>5+</h4>
+                  <span>Years of coding experience</span>
+                </div>
+                <div class="col-sm">
+                  <h4>Bootcamp</h4>
+                  <span>training with Futureproof</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md p-1 m-2">
+              <p>/ PROBLEM SOLVER & EAGER LEARNER</p>
+              <h5>
+                I have a genuine passion for web development, problem solving
+                and facing new challenges every day.
+              </h5>
+              <p>
+                I have a strong foundation in full stack development, a creative
+                mind in graphics design and overall motivated passion to learn
+                more.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-weight-bold text-center mb-5">MY TECH STACK</h2>
+            <div class="row">
+              <div class="tech-card col-sm m-2 p-5">
+                <i class="fas fa-pencil-ruler fa-2x"></i>
+                <h5>UI/UX GRAPHIC DESIGN</h5>
+                <hr />
+                <p>
+                  I have experience using Adobe Suite, speciallising with
+                  Photoshop & Illustrator.
+                </p>
+              </div>
+              <div class="tech-card col-sm m-2 p-5">
+                <i class="fas fa-file-code fa-2x"></i>
+                <h5>FRONT-END DEVELOPMENT</h5>
+                <hr />
+                <p>
+                  HTML, CSS, JavaScript, React & More. I can bring the design to
+                  life.
+                </p>
+              </div>
+              <div class="tech-card col-sm m-2 p-5">
+                <i class="fas fa-layer-group fa-2x"></i>
+                <h5>BACK-END DEVELOPMENT</h5>
+                <hr />
+                <p>Can't forget about what makes a website work.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--
         Projects section
       -->
-      <div class="jumbotron">
-        <h2>My Projects</h2>
-        <p>Coming soon...</p>
-      </div>
+      <section class="portfolio">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-md p-1 m-2">
+              <p>/ MOTIVATED INDIVIDUAL AND COLLABORATIVE TEAM PLAYER</p>
+              <h5>
+                Whether it be self or team projects. I always give my 100%.
+              </h5>
+              <p>
+                I have a variety of different projects throughout my web
+                development timeline. Make sure to check out my GitHub to see
+                all the projects.
+              </p>
+            </div>
+            <div class="portfolio-highlight col-md py-5 m-2">
+              <div class="row">
+                <div class="col-sm">
+                  <h4>20+</h4>
+                  <span>Group and self projects</span>
+                </div>
+                <div class="col-sm">
+                  <h4>GitHub</h4>
+                  <span>all projects can be found on my GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--
         Contact section
       -->
-      <div class="jumbotron">
-        <h2>Contact</h2>
-        <p>Find all means of contacting me here</p>
-      </div>
-      <ul>
-        <li>Mobile:</li>
-        <li>Email:</li> 
-        <li>Github: <a href="https://github.com/HeyAero/">here</a></li> 
-        <li>LinkedIn:</li>
-      </ul>
-    </div>
+      <section class="contact">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="contact-highlight col-md py-5 m-2">
+              <div class="row">
+                <h4>Get in touch</h4>
+                <span>There are many ways to contact me</span>
+              </div>
+            </div>
+            <div class="contact-card col-md p-5 m-2">
+              <h5>CONTACT</h5>
+              <ul>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Mobile</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!--
       Footer
     -->
     <footer>
-      <p>Copyright of Aaron Yates</p>
+      <div class="container">
+        <p>Copyright of Aaron Yates</p>
+      </div>
     </footer>
   </body>
 </html>

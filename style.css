@@ -78,7 +78,8 @@ footer {
   min-height: 80vh;
 }
 
-.welcome p {
+.welcome p,
+.about p {
   color: rgb(178, 136, 187);
   font-weight: 200;
   font-size: 1.1rem;
@@ -108,4 +109,25 @@ footer {
 
 .scroll-text {
   font-weight: 700;
+}
+
+.about {
+  background-color: rgb(64, 16, 107);
+}
+
+.about-highlight {
+  background-image: url('assets/images/about.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about h4 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.about span {
+  font-weight: 200;
+  color: white;
+  font-size: 1.7rem;
 }

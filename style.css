@@ -79,7 +79,8 @@ footer {
 }
 
 .welcome p,
-.about p {
+.about p,
+.portfolio p {
   color: rgb(178, 136, 187);
   font-weight: 200;
   font-size: 1.1rem;
@@ -115,8 +116,8 @@ footer {
   background: rgb(64, 16, 107);
   background: linear-gradient(
     180deg,
-    rgba(64, 16, 107, 1) 71%,
-    rgba(101, 26, 94, 0) 71%
+    rgba(64, 16, 107, 1) 73%,
+    rgba(101, 26, 94, 0) 73%
   );
 }
 
@@ -126,12 +127,20 @@ footer {
   background-position: center center;
 }
 
-.about h4 {
+.portfolio-highlight {
+  background-image: url('assets/images/portfolio.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about h4,
+.portfolio h4 {
   font-weight: 700;
   font-size: 3rem;
 }
 
-.about span {
+.about span,
+.portfolio span {
   font-weight: 200;
   color: white;
   font-size: 1.7rem;

@@ -131,3 +131,15 @@ footer {
   color: white;
   font-size: 1.7rem;
 }
+
+.mobile-menu {
+  height: 50px;
+}
+
+.mobile-menu a {
+  color: white;
+}
+
+.mobile-menu a:hover {
+  color: #ff5761;
+}

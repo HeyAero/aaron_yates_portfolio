@@ -13,6 +13,7 @@ body {
     rgba(64, 16, 107, 1) 0%,
     rgba(101, 26, 94, 1) 100%
   );
+  color: white;
   font-family: 'Assistant', sans-serif;
 }
 
@@ -26,7 +27,7 @@ body {
 */
 header {
   background: #40106b;
-  border-bottom: 2spx solid #330b57;
+  border-bottom: 2px solid #330b57;
   color: white;
   margin-bottom: 25px;
   text-align: center;
@@ -49,7 +50,7 @@ nav a {
 nav a:hover {
   border-bottom: 5px solid #ff5761;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
@@ -59,11 +60,52 @@ nav a:hover {
     padding           - setting the spacing within the footer tag
 */
 footer {
-  background: #ffdc94;
+  background: #40106b;
+  border-top: 2px solid #330b57;
   margin-top: 25px;
   padding: 5px;
 }
 
 .jumbotron {
   background-color: #ffdc94;
+}
+
+.welcome {
+  min-height: 80vh;
+}
+
+.welcome > div {
+  min-height: 80vh;
+}
+
+.welcome p {
+  color: rgb(178, 136, 187);
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+.welcome h5 {
+  font-size: 2rem;
+}
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.welcome a {
+  color: white;
+}
+
+.welcome a:hover {
+  color: #ff5761;
+  text-decoration: none;
+}
+
+.welcome img {
+  width: 75%;
+}
+
+.scroll-text {
+  font-weight: 700;
 }

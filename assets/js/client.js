@@ -1,4 +1,6 @@
 // SETUP
+// MOMENT - npm dependency for formating dates
+var moment = require('moment'); // require
 const githubDiv = document.getElementById('github');
 
 function getAllRepos() {
@@ -28,7 +30,7 @@ function appendRepo(repo) {
   const name = repo.name;
   const html_url = repo.html_url;
   const description = repo.description || 'One of my repos';
-  const updated = repo.updated_at;
+  const updated = moment(repo.updated_at).format('DD/MM/YYYY');
   createCard(name, html_url, description, updated);
 }
 
@@ -45,6 +47,7 @@ function createCard(name, url, desc, date) {
   cardHolder.classList.add('m-2');
   const nameEl = document.createElement('h5');
   const dateEl = document.createElement('p');
+  dateEl.classList.add('card-date');
   const descEl = document.createElement('p');
   const urlEl = document.createElement('a');
 
@@ -54,8 +57,8 @@ function createCard(name, url, desc, date) {
   urlEl.innerHTML = 'Click Here to View';
   urlEl.setAttribute('href', url);
 
-  cardHolder.appendChild(nameEl);
   cardHolder.appendChild(dateEl);
+  cardHolder.appendChild(nameEl);
   cardHolder.appendChild(descEl);
   cardHolder.appendChild(urlEl);
 

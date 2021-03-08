@@ -205,3 +205,16 @@ footer {
 hr {
   background-color: white;
 }
+
+.card-date {
+  font-size: 0.9rem !important;
+}
+
+.portfolio a {
+  color: white;
+}
+
+.portfolio a:hover {
+  color: #ff5761;
+  text-decoration: none;
+}

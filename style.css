@@ -218,3 +218,11 @@ hr {
   color: #ff5761;
   text-decoration: none;
 }
+
+.project-single {
+  background-color: #330d56;
+}
+
+.project-single a {
+  display: block;
+}

@@ -17,6 +17,10 @@ body {
   font-family: 'Assistant', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header tag styling
     background        - setting background color
     border-bottom     - adds a border at the bottom of the header
@@ -219,10 +223,35 @@ hr {
   text-decoration: none;
 }
 
+.projects {
+  padding: 0 8px;
+}
+
 .project-single {
   background-color: #330d56;
 }
 
 .project-single a {
   display: block;
+}
+
+.tag-list p {
+  background-color: #982afe;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  display: inline;
+  padding: 1px 5px;
+}
+
+.tag-main {
+  background-color: #fe2a7b !important;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .tag-list {
+    padding-top: 15px;
+  }
 }

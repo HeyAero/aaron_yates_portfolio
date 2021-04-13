@@ -39,9 +39,9 @@
     -->
     <header class="container">
       <nav class="d-none d-sm-flex justify-content-start align-items-center">
-        <a href="#" class="px-5">Home</a>
-        <a href="#" class="px-5">About</a>
-        <a href="#" class="px-5">Portfolio</a>
+        <a href="#home" class="px-5">Home</a>
+        <a href="#about" class="px-5">About</a>
+        <a href="#portfolio" class="px-5">Portfolio</a>
         <div class="ml-auto">
           <img src="assets/images/logo.png" alt="aaron yates logo" />
         </div>
@@ -56,7 +56,7 @@
       Main content
     -->
     <main>
-      <section class="welcome container">
+      <section id="home" class="welcome container">
         <div class="row">
           <div class="col-md-7 align-self-end p-5 text-center">
             <img src="assets/images/me.png" alt="an image of me" />
@@ -76,14 +76,14 @@
               learnt and skills I brought together from my own learning, I am
               able to design, create and deploy responsive websites.
             </p>
-            <a class="scroll-text align-text-bottom">scroll for more</a>
+            <a href="#about" class="scroll-text align-text-bottom">scroll for more</a>
           </div>
         </div>
       </section>
       <!--
         About me section
       -->
-      <section class="about pt-5">
+      <section id="about" class="about pt-5">
         <div class="container py-2">
           <div class="row align-items-center">
             <div class="about-highlight col-md py-5 m-2">
@@ -145,7 +145,7 @@
       <!--
         Projects section
       -->
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container py-2">
           <div class="row align-items-center">
             <div class="col-md p-1 m-2">
@@ -179,15 +179,66 @@
                 <img src="assets/images/chirper.png" class="img-thumbnail" />
               </div>
               <div class="col-sm-8 align-self-center">
+                <div class="tag-list">
+                  <p class="tag-main">Group Project</p>
+                  <p>HTML & CSS</p>
+                  <p>JavaScript</p>
+                  <p>JSON</p>
+                  <p>Bootstrap</p>
+                  <p>Node.js</p>
+                  <p>Express.js</p>
+                  <p>Jest</p>
+                </div>
                 <h4 class="project-title">Chirper</h4>
                 <p>An journal app made for sustainability.</p>
                 <a href="https://chirper-uk.netlify.app/">View Website</a>
                 <a href="https://github.com/gretaivan/chirper">View Repo</a>
               </div>
             </div>
+            <div class="project-single p-5 my-3 row">
+              <div class="col-sm-4 align-self-center">
+                <img src="assets/images/idles.png" class="img-thumbnail" />
+              </div>
+              <div class="col-sm-8 align-self-center">
+                <div class="tag-list">
+                  <p class="tag-main">Learning Project</p>
+                  <p>React</p>
+                  <p>HTML & CSS</p>
+                  <p>JavaScript</p>
+                  <p>Bootstrap</p>
+                  <p>Node.js</p>
+                  <p>Jest / React Test Library</p>
+                </div>
+                <h4 class="project-title">IDLES Band Page</h4>
+                <p>A React music app for displaying information about the band IDLES.</p>
+                <a href="https://idles-band.netlify.app/">View Website</a>
+                <a href="https://github.com/HeyAero/music_app">View Repo</a>
+              </div>
+            </div>
+            <div class="project-single p-5 my-3 row">
+              <div class="col-sm-4 align-self-center">
+                <img src="assets/images/hobbit.png" class="img-thumbnail" />
+              </div>
+              <div class="col-sm-8 align-self-center">
+                <div class="tag-list">
+                  <p class="tag-main">Group Project</p>
+                  <p>HTML & CSS</p>
+                  <p>JavaScript</p>
+                  <p>PostgreSQL</p>
+                  <p>Bootstrap</p>
+                  <p>Node.js</p>
+                  <p>Express.js</p>
+                  <p>Jest</p>
+                </div>
+                <h4 class="project-title">Hobbit</h4>
+                <p>A Express.js app to turn habits into hobbies. It uses authorization and authentication tools: jwt/bcrypt.</p>
+                <a href="https://hobbit.netlify.app/">View Website</a>
+                <a href="https://github.com/HeyAero/hobbit">View Repo</a>
+              </div>
+            </div>
           </div>
           <h5 class="text-center">
-            Here's what I have been working on recently:
+            My recent Git activity:
           </h5>
           <div id="github" class="row"></div>
         </div>
@@ -195,7 +246,7 @@
       <!--
         Contact section
       -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container py-2">
           <div class="row align-items-center">
             <div class="contact-highlight col-md py-5 m-2">
